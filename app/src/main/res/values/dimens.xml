@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="margen_horizontal">20dp</dimen>
+    <dimen name="margen_izquierdo">50dp</dimen>
+    <dimen name="margen_derecho">30dp</dimen>
+    <dimen name="margen_vertical">10dp</dimen>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="341dp"
+        android:layout_height="475dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout">
+
+        <FrameLayout
+            android:id="@+id/frame_principal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- The ActionBar displayed at the top -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="286dp"
+            android:layout_height="188dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/texto"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center_vertical"
+            android:paddingRight="30dp"
+            android:layout_marginTop="48dp"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/textView2" />
+
+        <TextView
+            android:layout_width="223dp"
+            android:layout_height="140dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/texto2"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|bottom"
+            android:paddingRight="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginBottom="63dp"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+
+    </RelativeLayout>
+
+
+    <!-- Layout del menú lateral (Navigation View) -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_principal"
+        app:headerLayout="@layout/nav_header" />
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
