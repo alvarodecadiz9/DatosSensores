@@ -11,6 +11,7 @@
         android:layout_height="120dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_marginTop="139dp"
+        android:text="@string/texto_google"
         android:id="@+id/textView5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

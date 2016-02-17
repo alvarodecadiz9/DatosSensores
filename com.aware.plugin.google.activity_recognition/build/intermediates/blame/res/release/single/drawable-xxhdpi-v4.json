@@ -432,12 +432,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxhdpi\\powered_by_google_light.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\places_ic_search.png",
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxhdpi\\places_ic_search.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\8.4.0\\res\\drawable-xxhdpi\\powered_by_google_light.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",

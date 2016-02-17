@@ -14,10 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.aware.Aware;
-import com.aware.Aware_Preferences;
 import com.aware.plugin.google.activity_recognition.Google_AR_Provider;
 import com.aware.plugin.google.activity_recognition.Settings;
-import com.aware.providers.Light_Provider;
 import com.aware.utils.DatabaseHelper;
 import com.aware.utils.Http;
 
@@ -31,15 +29,13 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
     private Intent aware;
     private SendDataGoogleSensorJSON sendDataGoogleSensorJSON = null;
     Button botongoogle;
-    ProgressBar progressBar;
+    ProgressBar progressBar3;
     private Cursor google_data;
 
-    private static final String THINGSPEAK_API_KEY = "NH8BDD7YQ804I6XY";
-    private static final String THINGSPEAK_API_KEY_STRING = "api_key";
-    private static final String THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
+    private static final String THINGSPEAK_API_KEY = "NH8BDD7YQ804I6XY", THINGSPEAK_API_KEY_STRING = "api_key",
+            THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
 
-    private static final String THINGSPEAK_FIELD1 = "field1";
-    private static final String THINGSPEAK_FIELD2 = "field2";
+    private static final String THINGSPEAK_FIELD1 = "field1", THINGSPEAK_FIELD2 = "field2";
 
     private int campo1, campo2;
 
@@ -55,17 +51,25 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
         aware = new Intent(getActivity(), Aware.class);
         getActivity().startService(aware);
 
-        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);;
+        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);
         Aware.setSetting(getContext(), Settings.FREQUENCY_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, 200000);
 
         Aware.startPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
 
         botongoogle = (Button) rootView.findViewById(R.id.boton_google);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar3);
+        progressBar3 = (ProgressBar) rootView.findViewById(R.id.progressBar3);
 
         botongoogle.setOnClickListener(this);
 
         return rootView;
+    }
+
+
+    public void getDataGoogleSensor() {
+
+
+
+
     }
 
     @Override
@@ -74,21 +78,21 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
         switch (v.getId()){
 
             case R.id.boton_google:
+
                 google_data = getActivity().getContentResolver().query(Google_AR_Provider.Google_Activity_Recognition_Data.
-                                CONTENT_URI, null, null, null,
-                        Google_AR_Provider.Google_Activity_Recognition_Data.TIMESTAMP + " DESC LIMIT 10");
+                                CONTENT_URI, null, null, null, Google_AR_Provider.Google_Activity_Recognition_Data.TIMESTAMP +
+                        " DESC LIMIT 10");
 
-                if(google_data != null && google_data.getCount() > 0){
-                    campo1 = google_data.getInt(google_data.
-                            getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.ACTIVITY_TYPE));
+                if (google_data != null && google_data.getCount() > 0) {
 
-                    campo2 = google_data.getInt(google_data.
-                            getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.CONFIDENCE));
+                     botongoogle.setClickable(false);
 
+                        campo1 = google_data.getInt(google_data.
+                                getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.ACTIVITY_TYPE));
+
+                        campo2 = google_data.getInt(google_data.
+                                getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.CONFIDENCE));
                 }
-
-                botongoogle.setClickable(false);
-                DatabaseHelper.cursorToString(google_data);
 
                 sendDataGoogleSensorJSON = new SendDataGoogleSensorJSON();
                 sendDataGoogleSensorJSON.execute(google_data);
@@ -111,8 +115,30 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
     }
 
     @Override
+    public void onPause(){
+        super.onPause();
+        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+
+        if (google_data != null && !google_data.isClosed()) {
+            google_data.close();
+        }
+    }
+
+    @Override
     public void onStop() {
         super.onStop();
+        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+
+        if (google_data != null && !google_data.isClosed()) {
+            google_data.close();
+        }
+    }
+
+    @Override
+    public void onDestroyView(){
+        super.onDestroyView();
+
+        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
 
         if (google_data != null && !google_data.isClosed()) {
             google_data.close();
@@ -126,31 +152,22 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
         @Override
         protected void onPostExecute(Void result){
             botongoogle.setClickable(true);
-            progressBar.setVisibility(View.INVISIBLE);
+            progressBar3.setVisibility(View.INVISIBLE);
             Toast.makeText(getActivity(), "Tarea finalizada", Toast.LENGTH_SHORT).show();
 
         }
 
         @Override
         protected void onPreExecute(){
-            progressBar.setMax(100);
-            progressBar.setProgress(0);
-            progressBar.setVisibility(View.VISIBLE);
+            progressBar3.setMax(100);
+            progressBar3.setProgress(0);
+            progressBar3.setVisibility(View.VISIBLE);
         }
 
         @Override
         protected void onProgressUpdate(Integer... values){
             progreso = values[0].intValue();
-            progressBar.setProgress(progreso);
-
-            if(progreso < 100 && progressBar.getVisibility() == View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            if(progreso == 100){
-                progressBar.setVisibility(View.GONE);
-            }
-
+            progressBar3.setProgress(progreso);
         }
 
 

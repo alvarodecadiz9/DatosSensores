@@ -1,1 +1,1 @@
-include ':app', ':com.aware.plugin.google.activity_recognition', 'ambient_Noise2'
+include ':app', ':com.aware.plugin.google.activity_recognition', ':ambient_Noise'

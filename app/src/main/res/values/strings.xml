@@ -13,5 +13,7 @@
     <string name="texto_luz">Aquí se recogerá la iluminancia (en lux) y la exactitud del sensor.</string>
     <string name="boton">Enviar datos</string>
     <string name="texto_bateria">Los datos que se recogerán son el nivel de la batería, el voltaje actual y la temperatura actual.</string>
-
+    <string name="texto_google">Se recogerá el tipo de actividad realizada y el porcentaje de exactitud de la actividad.</string>
+    <string name="texto_ruido">Aquí se recogerá la frecuencia en Hz, el número de decibelios y un número que establece si hay silencio o no.</string>
+    <string name="texto_pantalla">Se recogerá un número que representa el estado de la pantalla (puede tener los siguientes valores: 0,1,2,3).</string>
 </resources>

@@ -52,11 +52,11 @@
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

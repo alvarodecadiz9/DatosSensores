@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ambient_Noise2" />
+            <option value="$PROJECT_DIR$/ambient_Noise" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/com.aware.plugin.google.activity_recognition" />
           </set>

@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,18 +30,16 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
     private Intent aware;
     private SendDataLightSensorJSON sendDataLightSensorJSON = null;
     Button botonluz;
-    ProgressBar progressBar;
+    ProgressBar progressBar1;
     private Cursor light_data;
 
-    private static final String THINGSPEAK_API_KEY = "HZ1SHW04MG9RJ6VI";
-    private static final String THINGSPEAK_API_KEY_STRING = "api_key";
-    private static final String THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
+    private static final String THINGSPEAK_API_KEY = "HZ1SHW04MG9RJ6VI", THINGSPEAK_API_KEY_STRING = "api_key",
+            THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
 
-    private static final String THINGSPEAK_FIELD2 = "field2";
-    private static final String THINGSPEAK_FIELD3 = "field3";
+    private static final String THINGSPEAK_FIELD1 = "field1", THINGSPEAK_FIELD2 = "field2";
 
-    private Double campo2;
-    private int campo3;
+    private double campo1;
+    private int campo2;
 
 
     public SensorLuz(){}
@@ -55,13 +54,13 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
         getActivity().startService(aware);
 
         Aware.setSetting(getContext(), Aware_Preferences.STATUS_LIGHT, true);
-        //Aware.setSetting(getContext(), Aware_Preferences.FREQUENCY_LIGHT, 2000000);
+        Aware.setSetting(getContext(), Aware_Preferences.FREQUENCY_LIGHT, 2000000);
 
         Aware.startSensor(getContext(), Aware_Preferences.STATUS_LIGHT);
 
 
         botonluz = (Button) rootView.findViewById(R.id.boton_luz);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
+        progressBar1 = (ProgressBar) rootView.findViewById(R.id.progressBar1);
 
         botonluz.setOnClickListener(this);
 
@@ -78,18 +77,20 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
                 light_data = getActivity().getContentResolver().query(Light_Provider.Light_Data.CONTENT_URI, null, null, null,
                         Light_Provider.Light_Data.TIMESTAMP + " DESC LIMIT 10");
 
-                if(light_data != null && light_data.getCount() > 0){
+                if(light_data != null && light_data.getCount() > 0) {
 
                         botonluz.setClickable(false);
-                        campo2 = light_data.getDouble(light_data.getColumnIndex(Light_Provider.Light_Data.LIGHT_LUX));
-                        campo3 = light_data.getInt(light_data.getColumnIndex(Light_Provider.Light_Data.ACCURACY));
 
-                        sendDataLightSensorJSON = new SendDataLightSensorJSON();
-                        sendDataLightSensorJSON.execute(light_data);
+                        campo1 = light_data.getDouble(light_data.getColumnIndex(Light_Provider.Light_Data.LIGHT_LUX));
+                        campo2 = light_data.getInt(light_data.getColumnIndex(Light_Provider.Light_Data.ACCURACY));
 
                 }
 
+                sendDataLightSensorJSON = new SendDataLightSensorJSON();
+                sendDataLightSensorJSON.execute(light_data);
+
                 break;
+
         }
 
     }
@@ -113,31 +114,21 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
         @Override
         protected void onPostExecute(Void result){
             botonluz.setClickable(true);
-            progressBar.setVisibility(View.INVISIBLE);
+            progressBar1.setVisibility(View.INVISIBLE);
             Toast.makeText(getActivity(), "Tarea finalizada", Toast.LENGTH_SHORT).show();
+            Log.i("logTag", "Tarea realizada");
 
         }
 
         @Override
         protected void onPreExecute(){
-            progressBar.setMax(100);
-            progressBar.setProgress(0);
-            progressBar.setVisibility(View.VISIBLE);
+            progressBar1.setVisibility(View.VISIBLE);
         }
 
         @Override
         protected void onProgressUpdate(Integer... values){
             progreso = values[0].intValue();
-            progressBar.setProgress(progreso);
-
-            if(progreso < 100 && progressBar.getVisibility() == View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            if(progreso == 100){
-                progressBar.setVisibility(View.GONE);
-            }
-
+            progressBar1.setProgress(progreso);
         }
 
 
@@ -156,8 +147,8 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
 
                         postData1.put("light_data", DatabaseHelper.cursorToString(data1));
                         http1.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD2 + "=" + campo2 + "&" +
-                                THINGSPEAK_FIELD3 + "=" + campo3, postData1, false);
+                                THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
+                                THINGSPEAK_FIELD2 + "=" + campo2, postData1, false);
                     }
 
                 }

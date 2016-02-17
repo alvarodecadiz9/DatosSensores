@@ -15,9 +15,6 @@ import android.widget.Toast;
 
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
-import com.aware.plugin.google.activity_recognition.Google_AR_Provider;
-import com.aware.plugin.google.activity_recognition.Settings;
-import com.aware.providers.Light_Provider;
 import com.aware.providers.Screen_Provider;
 import com.aware.utils.DatabaseHelper;
 import com.aware.utils.Http;
@@ -32,12 +29,11 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
     private Intent aware;
     private SendDataScreenSensorJSON sendDataScreenSensorJSON = null;
     Button botonpantalla;
-    ProgressBar progressBar;
+    ProgressBar progressBar5;
     private Cursor screen_data;
 
-    private static final String THINGSPEAK_API_KEY = "CRNFMJRDKW7WUZCU";
-    private static final String THINGSPEAK_API_KEY_STRING = "api_key";
-    private static final String THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
+    private static final String THINGSPEAK_API_KEY = "CRNFMJRDKW7WUZCU", THINGSPEAK_API_KEY_STRING = "api_key",
+            THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
 
     private static final String THINGSPEAK_FIELD1 = "field1";
 
@@ -59,7 +55,7 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
         Aware.startSensor(getContext(), Aware_Preferences.STATUS_SCREEN);
 
         botonpantalla = (Button) rootView.findViewById(R.id.boton_pantalla);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar5);
+        progressBar5 = (ProgressBar) rootView.findViewById(R.id.progressBar5);
 
         botonpantalla.setOnClickListener(this);
 
@@ -77,14 +73,15 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
                         Screen_Provider.Screen_Data.TIMESTAMP + " DESC LIMIT 10");
 
                 if(screen_data != null && screen_data.getCount() > 0){
+                    botonpantalla.setClickable(false);
                     campo1 = screen_data.getInt(screen_data.getColumnIndex(Screen_Provider.Screen_Data.SCREEN_STATUS));
-                }
 
-                botonpantalla.setClickable(false);
-                DatabaseHelper.cursorToString(screen_data);
+
+                }
 
                 sendDataScreenSensorJSON = new SendDataScreenSensorJSON();
                 sendDataScreenSensorJSON.execute(screen_data);
+
 
                 break;
         }
@@ -111,31 +108,22 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
         @Override
         protected void onPostExecute(Void result){
             botonpantalla.setClickable(true);
-            progressBar.setVisibility(View.INVISIBLE);
+            progressBar5.setVisibility(View.INVISIBLE);
             Toast.makeText(getActivity(), "Tarea finalizada", Toast.LENGTH_SHORT).show();
 
         }
 
         @Override
         protected void onPreExecute(){
-            progressBar.setMax(100);
-            progressBar.setProgress(0);
-            progressBar.setVisibility(View.VISIBLE);
+            progressBar5.setMax(100);
+            progressBar5.setProgress(0);
+            progressBar5.setVisibility(View.VISIBLE);
         }
 
         @Override
         protected void onProgressUpdate(Integer... values){
             progreso = values[0].intValue();
-            progressBar.setProgress(progreso);
-
-            if(progreso < 100 && progressBar.getVisibility() == View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            if(progreso == 100){
-                progressBar.setVisibility(View.GONE);
-            }
-
+            progressBar5.setProgress(progreso);
         }
 
 
@@ -147,14 +135,14 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
                 progreso++;
                 publishProgress(progreso);
 
-                for (Cursor data4 : params) {
-                    if (data4 != null && data4.getCount() > 0) {
-                        Http http4 = new Http(getActivity());
-                        Hashtable<String, String> postData4 = new Hashtable<>();
+                for (Cursor data5 : params) {
+                    if (data5 != null && data5.getCount() > 0) {
+                        Http http5 = new Http(getActivity());
+                        Hashtable<String, String> postData5 = new Hashtable<>();
 
-                        postData4.put("screen_data", DatabaseHelper.cursorToString(data4));
-                        http4.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1, postData4, false);
+                        postData5.put("screen_data", DatabaseHelper.cursorToString(data5));
+                        http5.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                THINGSPEAK_FIELD1 + "=" + campo1, postData5, false);
                     }
 
                 }

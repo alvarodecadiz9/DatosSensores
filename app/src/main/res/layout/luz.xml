@@ -32,7 +32,7 @@
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBar1"
         android:layout_below="@+id/boton_luz"
         android:layout_alignLeft="@+id/boton_luz"
         android:layout_alignStart="@+id/boton_luz"

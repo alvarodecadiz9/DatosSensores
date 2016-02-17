@@ -1,0 +1,570 @@
+[
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_bluetooth_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_bluetooth_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_locations.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_locations.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_timezone_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_timezone_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_accelerometer_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_accelerometer_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_rotation_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_rotation_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_linear_acceleration.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_linear_acceleration.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_network_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_network_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher_aware.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_launcher_aware.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pkg_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_pkg_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_study.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_study.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_stat_aware_accessibility.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_stat_aware_accessibility.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher_settings.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_launcher_settings.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_ambient_noise.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\src\\main\\res\\drawable-xxhdpi\\ic_action_ambient_noise.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_linear_acceleration_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_linear_acceleration_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_telephony_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_telephony_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_network.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_network.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_timezone.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_timezone.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_stat_aware_update.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_stat_aware_update.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_screen_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_screen_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_rotation.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_rotation.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_screen.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_screen.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_add_plugin.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_add_plugin.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_processor_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_processor_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pkg_updated.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_pkg_updated.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_light.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_light.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_proximity_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_proximity_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_temperature_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_temperature_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_aware_plugins.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_aware_plugins.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_pkg_download.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_pkg_download.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_mqtt.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_mqtt.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_gravity.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_gravity.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_processor.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_processor.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_aware_studies.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_aware_studies.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_esm.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_esm.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_locations_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_locations_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_mqtt_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_mqtt_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_esm_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_esm_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_applications_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_applications_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_gyroscope.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_gyroscope.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_light_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_light_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_wifi.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_wifi.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_communication_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_communication_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_aware_sensors.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_aware_sensors.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_stat_aware_plugin_dependency.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_stat_aware_plugin_dependency.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_card_android_wear.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_card_android_wear.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_gyroscope_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_gyroscope_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_bluetooth.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_bluetooth.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_accelerometer.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_accelerometer.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_plugin_settings.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_plugin_settings.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_study_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_study_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_battery_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_battery_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_proximity.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_proximity.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_magnetometer.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_magnetometer.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_communication.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_communication.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_magnetometer_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_magnetometer_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_gravity_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_gravity_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_temperature.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_temperature.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_aware_stream.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_aware_stream.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_applications.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_applications.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_barometer.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_barometer.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_barometer_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_barometer_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_battery.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_battery.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_qrcode.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_qrcode.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_telephony.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_telephony.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_action_wifi_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-xxhdpi\\ic_action_wifi_active.png"
+    }
+]

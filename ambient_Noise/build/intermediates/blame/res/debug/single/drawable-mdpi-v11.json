@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_aware_update.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi-v11\\ic_stat_aware_update.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_aware_esm.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi-v11\\ic_stat_aware_esm.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_aware_plugin_dependency.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi-v11\\ic_stat_aware_plugin_dependency.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_aware_accessibility.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi-v11\\ic_stat_aware_accessibility.png"
+    }
+]

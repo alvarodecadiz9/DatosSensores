@@ -29,16 +29,13 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
     private Intent aware;
     private SendDataBatterySensorJSON sendDataBatterySensorJSON = null;
     Button botonbateria;
-    ProgressBar progressBar;
+    ProgressBar progressBar2;
     private Cursor battery_data;
 
-    private static final String THINGSPEAK_API_KEY = "YXKCZC3MC3FO0S9OI";
-    private static final String THINGSPEAK_API_KEY_STRING = "api_key";
-    private static final String THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
+    private static final String THINGSPEAK_API_KEY = "YXKCZC3MC3FO0S9O", THINGSPEAK_API_KEY_STRING = "api_key",
+            THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
 
-    private static final String THINGSPEAK_FIELD1 = "field1";
-    private static final String THINGSPEAK_FIELD2 = "field2";
-    private static final String THINGSPEAK_FIELD3 = "field3";
+    private static final String THINGSPEAK_FIELD1 = "field1", THINGSPEAK_FIELD2 = "field2", THINGSPEAK_FIELD3 = "field3";
 
     private int campo1, campo2, campo3;
 
@@ -59,7 +56,7 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
         Aware.startSensor(getContext(), Aware_Preferences.STATUS_BATTERY);
 
         botonbateria = (Button) rootView.findViewById(R.id.boton_bateria);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar2);
+        progressBar2 = (ProgressBar) rootView.findViewById(R.id.progressBar2);
 
         botonbateria.setOnClickListener(this);
 
@@ -76,13 +73,13 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
                         Battery_Provider.Battery_Data.TIMESTAMP + " DESC LIMIT 10");
 
                 if(battery_data != null && battery_data.getCount() > 0){
+
+                    botonbateria.setClickable(false);
                     campo1 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.SCALE));
                     campo2 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.VOLTAGE));
                     campo3 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.TEMPERATURE));
 
                 }
-
-                botonbateria.setClickable(false);
 
                 sendDataBatterySensorJSON = new SendDataBatterySensorJSON();
                 sendDataBatterySensorJSON.execute(battery_data);
@@ -110,30 +107,22 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
         @Override
         protected void onPostExecute(Void result){
             botonbateria.setClickable(true);
-            progressBar.setVisibility(View.INVISIBLE);
+            progressBar2.setVisibility(View.INVISIBLE);
             Toast.makeText(getActivity(), "Tarea finalizada", Toast.LENGTH_SHORT).show();
 
         }
 
         @Override
         protected void onPreExecute(){
-            progressBar.setMax(100);
-            progressBar.setProgress(0);
-            progressBar.setVisibility(View.VISIBLE);
+            progressBar2.setMax(100);
+            progressBar2.setProgress(0);
+            progressBar2.setVisibility(View.VISIBLE);
         }
 
         @Override
         protected void onProgressUpdate(Integer... values){
             progreso = values[0].intValue();
-            progressBar.setProgress(progreso);
-
-            if(progreso < 100 && progressBar.getVisibility() == View.GONE){
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            if(progreso == 100){
-                progressBar.setVisibility(View.GONE);
-            }
+            progressBar2.setProgress(progreso);
 
         }
 
