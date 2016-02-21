@@ -65,13 +65,6 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
     }
 
 
-    public void getDataGoogleSensor() {
-
-
-
-
-    }
-
     @Override
     public void onClick(View v) {
 
@@ -81,21 +74,15 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
 
                 google_data = getActivity().getContentResolver().query(Google_AR_Provider.Google_Activity_Recognition_Data.
                                 CONTENT_URI, null, null, null, Google_AR_Provider.Google_Activity_Recognition_Data.TIMESTAMP +
-                        " DESC LIMIT 10");
+                        " DESC LIMIT 1");
 
                 if (google_data != null && google_data.getCount() > 0) {
 
-                     botongoogle.setClickable(false);
+                    botongoogle.setClickable(false);
+                    sendDataGoogleSensorJSON = new SendDataGoogleSensorJSON();
+                    sendDataGoogleSensorJSON.execute(google_data);
 
-                        campo1 = google_data.getInt(google_data.
-                                getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.ACTIVITY_TYPE));
-
-                        campo2 = google_data.getInt(google_data.
-                                getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.CONFIDENCE));
                 }
-
-                sendDataGoogleSensorJSON = new SendDataGoogleSensorJSON();
-                sendDataGoogleSensorJSON.execute(google_data);
 
                 break;
         }
@@ -178,16 +165,29 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
 
                 progreso++;
                 publishProgress(progreso);
+                Http http3 = new Http(getActivity());
+
 
                 for (Cursor data3 : params) {
-                    if (data3 != null && data3.getCount() > 0) {
-                        Http http3 = new Http(getActivity());
-                        Hashtable<String, String> postData3 = new Hashtable<>();
+                    if (data3 != null && data3.getCount() > 0 && data3.moveToFirst()) {
 
-                        postData3.put("google_data", DatabaseHelper.cursorToString(data3));
-                        http3.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
-                                THINGSPEAK_FIELD2 + "=" + campo2, postData3, false);
+                        do {
+
+                            campo1 = google_data.getInt(google_data.
+                                    getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.ACTIVITY_TYPE));
+
+                            campo2 = google_data.getInt(google_data.
+                                    getColumnIndex(Google_AR_Provider.Google_Activity_Recognition_Data.CONFIDENCE));
+
+                            Hashtable<String, String> postData3 = new Hashtable<>();
+
+                            postData3.put("google_data", DatabaseHelper.cursorToString(data3));
+                            http3.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                    THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
+                                    THINGSPEAK_FIELD2 + "=" + campo2, postData3, false);
+
+                        } while (data3.moveToNext());
+
                     }
 
                 }

@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,7 @@ import java.util.Hashtable;
 import sensores.datossensores.R;
 import sensores.datossensores.activities.MainActivity;
 
-public class SensorLuz extends Fragment implements View.OnClickListener{
+public class SensorLuz extends Fragment implements View.OnClickListener {
 
     private Intent aware;
     private SendDataLightSensorJSON sendDataLightSensorJSON = null;
@@ -36,18 +35,17 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
     private static final String THINGSPEAK_API_KEY = "HZ1SHW04MG9RJ6VI", THINGSPEAK_API_KEY_STRING = "api_key",
             THINGSPEAK_UPDATE_URL = "http://api.thingspeak.com/update?";
 
-    private static final String THINGSPEAK_FIELD1 = "field1", THINGSPEAK_FIELD2 = "field2";
+    private static final String THINGSPEAK_FIELD1 = "field1", THINGSPEAK_FIELD2 = "field3";
 
     private double campo1;
     private int campo2;
-
 
     public SensorLuz(){}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 
-        View rootView = inflater.inflate(R.layout.luz, container, false);
+        final View rootView = inflater.inflate(R.layout.luz, container, false);
         ((MainActivity) getActivity()).getSupportActionBar().setTitle("Sensor de Luz");
 
         aware = new Intent(getActivity(), Aware.class);
@@ -75,19 +73,15 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
 
             case R.id.boton_luz:
                 light_data = getActivity().getContentResolver().query(Light_Provider.Light_Data.CONTENT_URI, null, null, null,
-                        Light_Provider.Light_Data.TIMESTAMP + " DESC LIMIT 10");
+                        Light_Provider.Light_Data.TIMESTAMP + " DESC LIMIT 1");
 
                 if(light_data != null && light_data.getCount() > 0) {
 
-                        botonluz.setClickable(false);
-
-                        campo1 = light_data.getDouble(light_data.getColumnIndex(Light_Provider.Light_Data.LIGHT_LUX));
-                        campo2 = light_data.getInt(light_data.getColumnIndex(Light_Provider.Light_Data.ACCURACY));
+                    botonluz.setClickable(false);
+                    sendDataLightSensorJSON = new SendDataLightSensorJSON();
+                    sendDataLightSensorJSON.execute(light_data);
 
                 }
-
-                sendDataLightSensorJSON = new SendDataLightSensorJSON();
-                sendDataLightSensorJSON.execute(light_data);
 
                 break;
 
@@ -116,12 +110,12 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
             botonluz.setClickable(true);
             progressBar1.setVisibility(View.INVISIBLE);
             Toast.makeText(getActivity(), "Tarea finalizada", Toast.LENGTH_SHORT).show();
-            Log.i("logTag", "Tarea realizada");
-
         }
 
         @Override
         protected void onPreExecute(){
+            progressBar1.setMax(100);
+            progressBar1.setProgress(0);
             progressBar1.setVisibility(View.VISIBLE);
         }
 
@@ -139,16 +133,25 @@ public class SensorLuz extends Fragment implements View.OnClickListener{
 
                 progreso++;
                 publishProgress(progreso);
+                Http http1 = new Http(getActivity());
 
                 for (Cursor data1 : params) {
-                    if (data1 != null && data1.getCount() > 0) {
-                        Http http1 = new Http(getActivity());
-                        Hashtable<String, String> postData1 = new Hashtable<>();
+                    if (data1 != null && data1.getCount() > 0 && data1.moveToFirst()) {
 
-                        postData1.put("light_data", DatabaseHelper.cursorToString(data1));
-                        http1.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
-                                THINGSPEAK_FIELD2 + "=" + campo2, postData1, false);
+                        do {
+
+                            campo1 = light_data.getDouble(light_data.getColumnIndex(Light_Provider.Light_Data.LIGHT_LUX));
+                            campo2 = light_data.getInt(light_data.getColumnIndex(Light_Provider.Light_Data.ACCURACY));
+
+                            Hashtable<String, String> postData1 = new Hashtable<>();
+                            postData1.put("light_data", DatabaseHelper.cursorToString(data1));
+
+                            http1.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                    THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
+                                    THINGSPEAK_FIELD2 + "=" + campo2, postData1, false);
+
+                        } while (data1.moveToNext());
+
                     }
 
                 }

@@ -70,18 +70,15 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
 
             case R.id.boton_pantalla:
                 screen_data = getActivity().getContentResolver().query(Screen_Provider.Screen_Data.CONTENT_URI, null, null, null,
-                        Screen_Provider.Screen_Data.TIMESTAMP + " DESC LIMIT 10");
+                        Screen_Provider.Screen_Data.TIMESTAMP + " DESC LIMIT 1");
 
                 if(screen_data != null && screen_data.getCount() > 0){
-                    botonpantalla.setClickable(false);
-                    campo1 = screen_data.getInt(screen_data.getColumnIndex(Screen_Provider.Screen_Data.SCREEN_STATUS));
 
+                    botonpantalla.setClickable(false);
+                    sendDataScreenSensorJSON = new SendDataScreenSensorJSON();
+                    sendDataScreenSensorJSON.execute(screen_data);
 
                 }
-
-                sendDataScreenSensorJSON = new SendDataScreenSensorJSON();
-                sendDataScreenSensorJSON.execute(screen_data);
-
 
                 break;
         }
@@ -134,15 +131,22 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
 
                 progreso++;
                 publishProgress(progreso);
+                Http http5 = new Http(getActivity());
 
                 for (Cursor data5 : params) {
-                    if (data5 != null && data5.getCount() > 0) {
-                        Http http5 = new Http(getActivity());
-                        Hashtable<String, String> postData5 = new Hashtable<>();
+                    if (data5 != null && data5.getCount() > 0 && data5.moveToFirst()) {
 
-                        postData5.put("screen_data", DatabaseHelper.cursorToString(data5));
-                        http5.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1, postData5, false);
+                        do {
+
+                            campo1 = screen_data.getInt(screen_data.getColumnIndex(Screen_Provider.Screen_Data.SCREEN_STATUS));
+
+                            Hashtable<String, String> postData5 = new Hashtable<>();
+                            postData5.put("screen_data", DatabaseHelper.cursorToString(data5));
+                            http5.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                    THINGSPEAK_FIELD1 + "=" + campo1, postData5, false);
+
+                        } while (data5.moveToNext());
+
                     }
 
                 }

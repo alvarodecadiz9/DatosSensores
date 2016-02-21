@@ -72,21 +72,15 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
             case R.id.boton_ruido:
 
                 noise_data = getActivity().getContentResolver().query(Provider.AmbientNoise_Data.CONTENT_URI,
-                        null, null, null, Provider.AmbientNoise_Data.TIMESTAMP + " DESC LIMIT 10");
+                        null, null, null, Provider.AmbientNoise_Data.TIMESTAMP + " DESC LIMIT 1");
 
                 if (noise_data != null && noise_data.getCount() > 0) {
-                      botonruido.setClickable(false);
 
-                        campo1 = noise_data.getDouble(noise_data.getColumnIndex(Provider.AmbientNoise_Data.FREQUENCY));
-
-                        campo2 = noise_data.getDouble(noise_data.getColumnIndex(Provider.AmbientNoise_Data.DECIBELS));
-
-                        campo3 = noise_data.getInt(noise_data.getColumnIndex(Provider.AmbientNoise_Data.IS_SILENT));
+                    botonruido.setClickable(false);
+                    sendDataAmbientNoiseSensorJSON = new SendDataAmbientNoiseSensorJSON();
+                    sendDataAmbientNoiseSensorJSON.execute(noise_data);
 
                 }
-
-                sendDataAmbientNoiseSensorJSON = new SendDataAmbientNoiseSensorJSON();
-                sendDataAmbientNoiseSensorJSON.execute(noise_data);
 
                 break;
         }
@@ -169,17 +163,27 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
 
                 progreso++;
                 publishProgress(progreso);
+                Http http4 = new Http(getActivity());
 
                 for (Cursor data4 : params) {
-                    if (data4 != null && data4.getCount() > 0) {
-                        Http http4 = new Http(getActivity());
-                        Hashtable<String, String> postData4 = new Hashtable<>();
+                    if (data4 != null && data4.getCount() > 0 && data4.moveToFirst()) {
 
-                        postData4.put("noise_data", DatabaseHelper.cursorToString(data4));
-                        http4.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
-                                THINGSPEAK_FIELD2 + "=" + campo2 + "&" +
-                                THINGSPEAK_FIELD3 + "=" + campo3, postData4, false);
+                        do {
+
+                            campo1 = noise_data.getDouble(noise_data.getColumnIndex(Provider.AmbientNoise_Data.FREQUENCY));
+                            campo2 = noise_data.getDouble(noise_data.getColumnIndex(Provider.AmbientNoise_Data.DECIBELS));
+                            campo3 = noise_data.getInt(noise_data.getColumnIndex(Provider.AmbientNoise_Data.IS_SILENT));
+
+                            Hashtable<String, String> postData4 = new Hashtable<>();
+
+                            postData4.put("noise_data", DatabaseHelper.cursorToString(data4));
+                            http4.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                    THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
+                                    THINGSPEAK_FIELD2 + "=" + campo2 + "&" +
+                                    THINGSPEAK_FIELD3 + "=" + campo3, postData4, false);
+
+                        } while (data4.moveToNext());
+
                     }
 
                 }

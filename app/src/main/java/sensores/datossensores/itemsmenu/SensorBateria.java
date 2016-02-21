@@ -70,19 +70,14 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
 
             case R.id.boton_bateria:
                 battery_data = getActivity().getContentResolver().query(Battery_Provider.Battery_Data.CONTENT_URI, null, null, null,
-                        Battery_Provider.Battery_Data.TIMESTAMP + " DESC LIMIT 10");
+                        Battery_Provider.Battery_Data.TIMESTAMP + " DESC LIMIT 1");
 
                 if(battery_data != null && battery_data.getCount() > 0){
 
                     botonbateria.setClickable(false);
-                    campo1 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.SCALE));
-                    campo2 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.VOLTAGE));
-                    campo3 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.TEMPERATURE));
-
+                    sendDataBatterySensorJSON = new SendDataBatterySensorJSON();
+                    sendDataBatterySensorJSON.execute(battery_data);
                 }
-
-                sendDataBatterySensorJSON = new SendDataBatterySensorJSON();
-                sendDataBatterySensorJSON.execute(battery_data);
 
                 break;
         }
@@ -134,17 +129,26 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
 
                 progreso++;
                 publishProgress(progreso);
+                Http http2 = new Http(getActivity());
 
                 for (Cursor data2 : params) {
-                    if (data2 != null && data2.getCount() > 0) {
-                        Http http2 = new Http(getActivity());
-                        Hashtable<String, String> postData2 = new Hashtable<>();
+                    if (data2 != null && data2.getCount() > 0 && data2.moveToFirst()) {
 
-                        postData2.put("battery_data", DatabaseHelper.cursorToString(data2));
-                        http2.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
-                                THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
-                                THINGSPEAK_FIELD2 + "=" + campo2 + "&" +
-                                THINGSPEAK_FIELD3 + "=" + campo3, postData2, false);
+                        do {
+                            campo1 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.SCALE));
+                            campo2 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.VOLTAGE));
+                            campo3 = battery_data.getInt(battery_data.getColumnIndex(Battery_Provider.Battery_Data.TEMPERATURE));
+
+                            Hashtable<String, String> postData2 = new Hashtable<>();
+                            postData2.put("battery_data", DatabaseHelper.cursorToString(data2));
+
+                            http2.dataPOST(THINGSPEAK_UPDATE_URL + THINGSPEAK_API_KEY_STRING + "=" + THINGSPEAK_API_KEY + "&" +
+                                    THINGSPEAK_FIELD1 + "=" + campo1 + "&" +
+                                    THINGSPEAK_FIELD2 + "=" + campo2 + "&" +
+                                    THINGSPEAK_FIELD3 + "=" + campo3, postData2, false);
+
+                        } while (data2.moveToNext());
+
                     }
 
                 }

@@ -236,7 +236,6 @@
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA"
             >
-
         </provider>
         <provider
             android:name="com.aware.providers.Keyboard_Provider"
@@ -247,21 +246,21 @@
             >
         </provider>
 
-         <provider
+        <provider
             android:name="com.aware.plugin.google.activity_recognition.Google_AR_Provider"
             android:authorities="${applicationId}.provider.gar"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
 
-        <!--  tools:replace="android:authorities" -->
 
-         <provider
+        <provider
             android:name="com.aware.plugin.ambient_noise.Provider"
-            android:authorities="com.aware.plugin.ambient_noise.provider.ambient_noise"
+            android:authorities="${applicationId}.provider.ambient_noise"
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
 
 
 
