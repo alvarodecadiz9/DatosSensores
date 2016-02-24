@@ -204,12 +204,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_magnetometer_active.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-mdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-mdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-mdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_screen_active.png",
@@ -528,12 +528,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_proximity.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_linear_acceleration_active.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_linear_acceleration_active.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_magnetometer.png",
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_magnetometer.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_linear_acceleration_active.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_linear_acceleration_active.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_network_active.png",

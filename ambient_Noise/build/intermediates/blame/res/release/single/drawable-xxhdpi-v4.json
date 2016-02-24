@@ -472,12 +472,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_google_signin_btn_text_dark_focused.9.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\ic_action_ambient_noise.png",
         "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\src\\main\\res\\drawable-xxhdpi\\ic_action_ambient_noise.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\ambient_Noise\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\ic_action_battery_active.png",

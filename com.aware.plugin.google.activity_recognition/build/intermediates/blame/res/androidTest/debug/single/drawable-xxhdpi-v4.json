@@ -104,12 +104,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-xxhdpi\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_action_gravity_active.png",

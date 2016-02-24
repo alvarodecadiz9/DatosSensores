@@ -428,12 +428,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-mdpi\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-mdpi\\common_full_open_on_phone.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_aware_stream.png",
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_aware_stream.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-mdpi\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
@@ -448,12 +448,12 @@
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable-mdpi\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_light.png",
-        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_light.png"
-    },
-    {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_rotation_active.png",
         "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_rotation_active.png"
+    },
+    {
+        "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_light.png",
+        "source": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\exploded-aar\\com.awareframework\\aware-core\\3.9.8\\res\\drawable-mdpi\\ic_action_light.png"
     },
     {
         "merged": "C:\\Awareplugin\\DatosSensores\\com.aware.plugin.google.activity_recognition\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",

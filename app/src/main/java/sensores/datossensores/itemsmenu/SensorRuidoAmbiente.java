@@ -51,10 +51,10 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
         aware = new Intent(getActivity(), Aware.class);
         getActivity().startService(aware);
 
-        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE, true);
-        Aware.setSetting(getContext(), Settings.PLUGIN_AMBIENT_NOISE_SAMPLE_SIZE, 200000);
+        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE, true, "com.aware.plugin.ambient_noise");
+        Aware.setSetting(getContext(), Settings.PLUGIN_AMBIENT_NOISE_SAMPLE_SIZE, 60, "com.aware.plugin.ambient_noise");
 
-        Aware.startPlugin(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE);
+        Aware.startPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
         botonruido = (Button) rootView.findViewById(R.id.boton_ruido);
         progressBar4 = (ProgressBar) rootView.findViewById(R.id.progressBar4);
@@ -89,44 +89,54 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
         if (noise_data != null && !noise_data.isClosed()) {
             noise_data.close();
         }
+
+        super.onDestroy();
 
     }
 
+
     @Override
     public void onPause(){
-        super.onPause();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
         if (noise_data != null && !noise_data.isClosed()) {
             noise_data.close();
         }
+
+        super.onPause();
+
     }
 
     @Override
     public void onStop() {
-        super.onStop();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
         if (noise_data != null && !noise_data.isClosed()) {
             noise_data.close();
         }
+        noise_data = null;
+
+        super.onStop();
     }
 
     @Override
     public void onDestroyView(){
-        super.onDestroyView();
 
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE);
+        Aware.stopPlugin(getContext(),"com.aware.plugin.ambient_noise");
 
         if (noise_data != null && !noise_data.isClosed()) {
             noise_data.close();
         }
+
+        super.onDestroyView();
     }
 
     private class SendDataAmbientNoiseSensorJSON extends AsyncTask<Cursor, Integer, Void> {

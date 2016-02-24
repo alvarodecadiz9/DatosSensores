@@ -51,10 +51,12 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
         aware = new Intent(getActivity(), Aware.class);
         getActivity().startService(aware);
 
-        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);
-        Aware.setSetting(getContext(), Settings.FREQUENCY_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, 200000);
+        Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true,
+                "com.aware.plugin.google.activity_recognition");
+        Aware.setSetting(getContext(), Settings.FREQUENCY_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, 60,
+                "com.aware.plugin.google.activity_recognition");
 
-        Aware.startPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+        Aware.startPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
         botongoogle = (Button) rootView.findViewById(R.id.boton_google);
         progressBar3 = (ProgressBar) rootView.findViewById(R.id.progressBar3);
@@ -92,44 +94,52 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
         if (google_data != null && !google_data.isClosed()) {
             google_data.close();
         }
+
+        super.onDestroy();
 
     }
 
+
     @Override
     public void onPause(){
-        super.onPause();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
         if (google_data != null && !google_data.isClosed()) {
             google_data.close();
         }
+
+        super.onPause();
     }
 
     @Override
     public void onStop() {
-        super.onStop();
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+
+        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
         if (google_data != null && !google_data.isClosed()) {
             google_data.close();
         }
+
+        super.onStop();
     }
 
     @Override
     public void onDestroyView(){
-        super.onDestroyView();
 
-        Aware.stopPlugin(getContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION);
+        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
         if (google_data != null && !google_data.isClosed()) {
             google_data.close();
         }
+
+        super.onDestroyView();
     }
 
     private class SendDataGoogleSensorJSON extends AsyncTask<Cursor, Integer, Void> {

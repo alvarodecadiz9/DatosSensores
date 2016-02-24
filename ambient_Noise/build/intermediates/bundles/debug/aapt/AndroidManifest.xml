@@ -30,13 +30,6 @@
         <service
             android:name="com.aware.plugin.ambient_noise.Plugin$AudioAnalyser"
             android:exported="true" />
-
-        <provider
-            android:name="com.aware.plugin.ambient_noise.Provider"
-            android:authorities="com.aware.plugin.ambient_noise.provider.ambient_noise"
-            android:exported="true"
-            android:readPermission="com.aware.READ_CONTEXT_DATA"
-            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
     </application>
 
 </manifest>

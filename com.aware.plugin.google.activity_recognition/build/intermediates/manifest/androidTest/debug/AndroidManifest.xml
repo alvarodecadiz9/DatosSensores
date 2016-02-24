@@ -84,13 +84,6 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.Aware" />
 
-        <provider
-            android:name="com.aware.plugin.google.activity_recognition.Google_AR_Provider"
-            android:authorities="com.aware.plugin.google.activity_recognition.test.provider.gar"
-            android:exported="true"
-            android:readPermission="com.aware.READ_CONTEXT_DATA"
-            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
-
         <service
             android:name="com.aware.plugin.google.activity_recognition.Plugin"
             android:exported="true"
