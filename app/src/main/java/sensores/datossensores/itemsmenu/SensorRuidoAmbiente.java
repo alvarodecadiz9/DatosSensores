@@ -122,7 +122,6 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
         if (noise_data != null && !noise_data.isClosed()) {
             noise_data.close();
         }
-        noise_data = null;
 
         super.onStop();
     }
