@@ -106,42 +106,6 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
     }
 
 
-    @Override
-    public void onPause(){
-
-        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
-
-        if (google_data != null && !google_data.isClosed()) {
-            google_data.close();
-        }
-
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-
-        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
-
-        if (google_data != null && !google_data.isClosed()) {
-            google_data.close();
-        }
-
-        super.onStop();
-    }
-
-    @Override
-    public void onDestroyView(){
-
-        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
-
-        if (google_data != null && !google_data.isClosed()) {
-            google_data.close();
-        }
-
-        super.onDestroyView();
-    }
-
     private class SendDataGoogleSensorJSON extends AsyncTask<Cursor, Integer, Void> {
 
         int progreso;

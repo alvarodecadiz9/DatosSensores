@@ -101,43 +101,6 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
     }
 
 
-    @Override
-    public void onPause(){
-
-        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
-
-        if (noise_data != null && !noise_data.isClosed()) {
-            noise_data.close();
-        }
-
-        super.onPause();
-
-    }
-
-    @Override
-    public void onStop() {
-
-        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
-
-        if (noise_data != null && !noise_data.isClosed()) {
-            noise_data.close();
-        }
-
-        super.onStop();
-    }
-
-    @Override
-    public void onDestroyView(){
-
-        Aware.stopPlugin(getContext(),"com.aware.plugin.ambient_noise");
-
-        if (noise_data != null && !noise_data.isClosed()) {
-            noise_data.close();
-        }
-
-        super.onDestroyView();
-    }
-
     private class SendDataAmbientNoiseSensorJSON extends AsyncTask<Cursor, Integer, Void> {
 
         int progreso;
