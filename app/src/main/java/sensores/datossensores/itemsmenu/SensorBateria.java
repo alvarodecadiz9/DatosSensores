@@ -84,13 +84,26 @@ public class SensorBateria extends Fragment implements View.OnClickListener{
 
     }
 
-    @Override
     public void onDestroy() {
         super.onDestroy();
-        Aware.stopSensor(getContext(), Aware_Preferences.STATUS_BATTERY);
 
         if (battery_data != null && !battery_data.isClosed()) {
-            battery_data.close();
+
+            try {
+
+                battery_data.close();
+                battery_data = null;
+
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+
+            }
+
+            Aware.stopSensor(getContext(), Aware_Preferences.STATUS_BATTERY);
+
         }
     }
 

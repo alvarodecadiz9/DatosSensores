@@ -52,7 +52,10 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
         getActivity().startService(aware);
 
         Aware.setSetting(getContext(), Settings.STATUS_PLUGIN_AMBIENT_NOISE, true, "com.aware.plugin.ambient_noise");
+        Aware.setSetting(getContext(), Settings.FREQUENCY_PLUGIN_AMBIENT_NOISE, 0.5, "com.aware.plugin.ambient_noise");
         Aware.setSetting(getContext(), Settings.PLUGIN_AMBIENT_NOISE_SAMPLE_SIZE, 60, "com.aware.plugin.ambient_noise");
+        Aware.setSetting(getContext(), Settings.PLUGIN_AMBIENT_NOISE_SILENCE_THRESHOLD, 10, "com.aware.plugin.ambient_noise");
+
 
         Aware.startPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
@@ -87,16 +90,24 @@ public class SensorRuidoAmbiente extends Fragment implements View.OnClickListene
 
     }
 
-    @Override
     public void onDestroy() {
 
-        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
+        super.onDestroy();
 
         if (noise_data != null && !noise_data.isClosed()) {
-            noise_data.close();
+
+            try {
+                noise_data.close();
+                noise_data = null;
+
+            } catch (IllegalArgumentException e){
+                e.printStackTrace();
+            }
+
+
         }
 
-        super.onDestroy();
+        Aware.stopPlugin(getContext(), "com.aware.plugin.ambient_noise");
 
     }
 

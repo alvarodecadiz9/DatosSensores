@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">DatosSensores</string>
     <string name="texto">DatosSensores es una aplicación que sirve para obtener automáticamente datos de distintos sensores del móvil, utilizando para ello la librería Aware Framework.</string>
-    <string name="texto2">Para enviar datos de los sensores diponibles en la app, pulse sobre el menú, elija una opción y pulse el botón "Enviar datos"</string>
+    <string name="texto2">Para monitorizar y enviar datos de los sensores diponibles en la app, pulse sobre el menú, elija una opción y pulse el botón "Monitorizar sensor"</string>
     <string name="luz">Sensor de Luz</string>
     <string name="bateria">Batería</string>
     <string name="google">Plugin de Google</string>
@@ -11,7 +11,8 @@
     <string name="drawer_close">Cerrar menú</string>
     <string name="header">Menú Principal</string>
     <string name="texto_luz">Aquí se recogerá la iluminancia (en lux) y la exactitud del sensor.</string>
-    <string name="boton">Enviar datos</string>
+    <string name="boton1">Monitorizar sensor</string>
+    <string name="boton2">Cancelar monitorización</string>
     <string name="texto_bateria">Los datos que se recogerán son el nivel de la batería, el voltaje actual y la temperatura actual.</string>
     <string name="texto_google">Se recogerá el tipo de actividad realizada y el porcentaje de exactitud de la actividad.</string>
     <string name="texto_ruido">Aquí se recogerá la frecuencia en Hz, el número de decibelios y un número que establece si hay silencio o no.</string>

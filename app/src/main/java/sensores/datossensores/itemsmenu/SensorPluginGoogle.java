@@ -92,16 +92,23 @@ public class SensorPluginGoogle extends Fragment implements View.OnClickListener
     }
 
 
-    @Override
     public void onDestroy() {
 
-        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
+        super.onDestroy();
 
         if (google_data != null && !google_data.isClosed()) {
-            google_data.close();
+
+            try {
+                google_data.close();
+                google_data = null;
+
+            } catch (IllegalArgumentException e){
+                e.printStackTrace();
+            }
+
         }
 
-        super.onDestroy();
+        Aware.stopPlugin(getContext(), "com.aware.plugin.google.activity_recognition");
 
     }
 

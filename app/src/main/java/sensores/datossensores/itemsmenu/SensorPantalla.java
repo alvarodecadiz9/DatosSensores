@@ -86,15 +86,23 @@ public class SensorPantalla extends Fragment implements View.OnClickListener{
     }
 
 
-    @Override
     public void onDestroy() {
         super.onDestroy();
-        Aware.stopSensor(getContext(), Aware_Preferences.STATUS_SCREEN);
 
         if (screen_data != null && !screen_data.isClosed()) {
-            screen_data.close();
+
+            try {
+
+                screen_data.close();
+                screen_data = null;
+
+            } catch (IllegalArgumentException e){
+                e.printStackTrace();
+            }
+
         }
 
+        Aware.stopSensor(getContext(), Aware_Preferences.STATUS_SCREEN);
     }
 
 

@@ -12,8 +12,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import sensores.datossensores.R;
@@ -44,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 " para obtener automáticamente datos de distintos sensores del móvil, utilizando para ello la " +
                         "librería <b>Aware Framework</b>."));
 
-        texto2.setText(Html.fromHtml("Para enviar datos de los sensores diponibles en la app, pulse sobre el menú, " +
-                "elija una opción y pulse el botón <b>Enviar datos</b>."));
+        texto2.setText(Html.fromHtml("Para monitorizar y enviar datos de los sensores diponibles en la app, pulse sobre el menú, " +
+                "elija una opción y " + "pulse el botón <b>Monitorizar sensor</b>."));
+
+        texto2.setMovementMethod(new ScrollingMovementMethod());
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -84,6 +88,12 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
 
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        drawerLayout.removeAllViews();
     }
 
     private void setupDrawerContent(NavigationView navigationView){
