@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itemsmenu.SensorBateria">
 
 <RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="UselessParent">
 
     <TextView
         android:layout_width="281dp"
-        android:layout_height="120dp"
+        android:layout_height="110dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/texto_bateria"
-        android:layout_marginTop="139dp"
+        android:layout_marginTop="110dp"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -25,25 +32,20 @@
         android:background="#d7c4ef"
         android:textStyle="bold"
         android:layout_below="@+id/textView4"
-        android:layout_alignLeft="@+id/textView4"
         android:layout_alignStart="@+id/textView4"
-        android:layout_alignRight="@+id/textView4"
         android:layout_alignEnd="@+id/textView4" />
 
-    <ProgressBar
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/progressBar2"
+        android:text="@string/boton2"
+        android:id="@+id/boton_bateria_cancelar"
+        android:layout_marginTop="40dp"
+        android:background="#d7c4ef"
+        android:textStyle="bold"
         android:layout_below="@+id/boton_bateria"
-        android:layout_alignLeft="@+id/boton_bateria"
-        android:layout_alignStart="@+id/boton_bateria"
-        android:layout_marginTop="42dp"
-        android:layout_alignRight="@+id/boton_bateria"
         android:layout_alignEnd="@+id/boton_bateria"
-        android:max="100"
-        android:progress="0"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:visibility="invisible"
-        />
+        android:layout_alignStart="@+id/boton_bateria" />
 
 </RelativeLayout>
+</FrameLayout>

@@ -9,20 +9,16 @@
         android:id="@+id/sensor_bateria"
         android:icon="@drawable/ic_bateria"
         android:title="@string/bateria"/>
+
+    <item
+        android:id="@+id/sensor_procesador"
+        android:icon="@drawable/ic_procesador"
+        android:title="@string/procesador"/>
+
     <item
         android:id="@+id/sensor_google"
-        android:icon="@drawable/ic_plugin_google"
+        android:icon="@drawable/ic_google"
         android:title="@string/google"/>
-
-    <item
-        android:id="@+id/sensor_ruido"
-        android:icon="@drawable/ic_ruido_ambiente"
-        android:title="@string/ruido"/>
-
-    <item
-        android:id="@+id/sensor_pantalla"
-        android:icon="@drawable/ic_pantalla"
-        android:title="@string/pantalla"/>
 
     </group>
 

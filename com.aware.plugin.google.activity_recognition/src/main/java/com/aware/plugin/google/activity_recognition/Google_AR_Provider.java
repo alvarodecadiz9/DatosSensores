@@ -99,7 +99,7 @@ public class Google_AR_Provider extends ContentProvider {
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
     	if( ! initializeDB() ) {
-            Log.w(AUTHORITY,"Database unavailable...");
+            Log.w(AUTHORITY,"Database unavailable");
             return 0;
         }
 
@@ -136,7 +136,7 @@ public class Google_AR_Provider extends ContentProvider {
     @Override
     public Uri insert(Uri uri, ContentValues initialValues) {
     	if( ! initializeDB() ) {
-            Log.w(AUTHORITY,"Database unavailable...");
+            Log.w(AUTHORITY,"Database unavailable");
             return null;
         }
 
@@ -201,7 +201,7 @@ public class Google_AR_Provider extends ContentProvider {
             String[] selectionArgs, String sortOrder) {
         
     	if( ! initializeDB() ) {
-            Log.w(AUTHORITY,"Database unavailable...");
+            Log.w(AUTHORITY,"Database unavailable");
             return null;
         }
 
@@ -235,7 +235,7 @@ public class Google_AR_Provider extends ContentProvider {
             String[] selectionArgs) {
         
     	if( ! initializeDB() ) {
-            Log.w(AUTHORITY,"Database unavailable...");
+            Log.w(AUTHORITY,"Database unavailable");
             return 0;
         }
     	

@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    tools:context=".itemsmenu.SensorLuz">
 
-    <TextView
-        android:layout_width="281dp"
-        android:layout_height="120dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/texto_luz"
-        android:layout_marginTop="139dp"
-        android:id="@+id/textView3"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="UselessParent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/boton1"
-        android:id="@+id/boton_luz"
-        android:layout_marginTop="91dp"
-        android:background="#d7c4ef"
-        android:textStyle="bold"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
+        <TextView
+            android:layout_width="281dp"
+            android:layout_height="110dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/texto_luz"
+            android:layout_marginTop="110dp"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/boton2"
-        android:id="@+id/boton_luz_cancelar"
-        android:layout_marginTop="40dp"
-        android:background="#d7c4ef"
-        android:textStyle="bold"
-        android:layout_below="@+id/boton_luz"
-        android:layout_alignRight="@+id/boton_luz"
-        android:layout_alignEnd="@+id/boton_luz"
-        android:layout_alignLeft="@+id/boton_luz"
-        android:layout_alignStart="@+id/boton_luz" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton1"
+            android:id="@+id/boton_luz"
+            android:layout_marginTop="91dp"
+            android:background="#d7c4ef"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton2"
+            android:id="@+id/boton_luz_cancelar"
+            android:layout_marginTop="40dp"
+            android:background="#d7c4ef"
+            android:textStyle="bold"
+            android:layout_below="@+id/boton_luz"
+            android:layout_alignEnd="@+id/boton_luz"
+            android:layout_alignStart="@+id/boton_luz" />
 
-</RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

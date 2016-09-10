@@ -5,11 +5,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon, android:theme">
         <activity android:name=".activities.MainActivity">
@@ -188,23 +191,25 @@
             android:exported="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
-        <provider
-            android:name="com.aware.plugin.google.activity_recognition.Google_AR_Provider"
-            android:authorities="${applicationId}.provider.gar"
-            android:exported="true"
-            android:readPermission="com.aware.READ_CONTEXT_DATA"
-            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
-        <provider
-            android:name="com.aware.plugin.ambient_noise.Provider"
-            android:authorities="${applicationId}.provider.ambient_noise"
-            android:exported="true"
-            android:readPermission="com.aware.READ_CONTEXT_DATA"
-            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
 
         <service
-            android:name=".services.IniciarLuz"
+            android:name=".services.ServicioLuz"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="false" />
+        <service
+            android:name=".services.ServicioBateria"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.ServicioCPU"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".services.ServicioGoogle"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>

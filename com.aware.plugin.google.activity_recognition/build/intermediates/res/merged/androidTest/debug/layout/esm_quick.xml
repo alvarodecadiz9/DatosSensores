@@ -20,4 +20,4 @@
         android:paddingBottom="10dp"
         android:baselineAligned="false" />
 
-</LinearLayout><!-- From: file:/Users/denzil/AndroidStudio/aware-client/aware-core/src/main/res/layout/esm_quick.xml -->
+</LinearLayout>

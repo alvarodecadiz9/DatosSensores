@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".itemsmenu.SensorCPU">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        tools:ignore="UselessParent">
+
+    <TextView
+        android:layout_width="281dp"
+        android:layout_height="110dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/texto_procesador"
+        android:id="@+id/textView7"
+        android:layout_marginTop="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boton1"
+        android:id="@+id/boton_cpu"
+        android:layout_marginTop="91dp"
+        android:background="#d7c4ef"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/boton2"
+            android:id="@+id/boton_cpu_cancelar"
+            android:layout_marginTop="40dp"
+            android:background="#d7c4ef"
+            android:textStyle="bold"
+            android:layout_below="@+id/boton_cpu"
+            android:layout_alignEnd="@+id/boton_cpu"
+            android:layout_alignStart="@+id/boton_cpu" />
+
+    </RelativeLayout>
+</FrameLayout>
